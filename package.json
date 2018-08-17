@@ -35,6 +35,7 @@
     "setup": "npm run clean:all && npm install ./packages/strapi-lint --save-dev && npm install && node ./scripts/setup.js && npm run clean",
     "lint": "node ./scripts/lint.js",
     "test": "node ./test/start.js",
+    "test-mochaawesome": "nyc --reporter=html mocha test/*.js --reporter mochawesome --exit",
     "prettier": "node ./packages/strapi-lint/lib/internals/prettier/index.js"
   },
   "author": {
