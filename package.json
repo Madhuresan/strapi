@@ -36,6 +36,7 @@
     "lint": "node ./scripts/lint.js",
     "test": "node ./test/start.js",
     "test-mochaawesome": "nyc --reporter=html mocha test/*.js --reporter mochawesome --exit",
+    "lighthouse:ci": "lighthouse --output-path=report/lighthouse-report.html --quiet --chrome-flags='--headless --no-sandbox=true' //http:localhost:3000//",
     "prettier": "node ./packages/strapi-lint/lib/internals/prettier/index.js"
   },
   "author": {
